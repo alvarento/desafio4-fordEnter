@@ -1,0 +1,20 @@
+.main__legend {
+   margin-top: .75rem;
+}
+
+.main__legend a {
+   color: var(--second-color);
+   font-weight: 500;
+}
+
+.main__legend a:hover {
+   text-decoration: underline;
+   font-weight: 600;
+}
+
+.main__image {
+   width: 90vw;
+   max-width: 1440px;
+   box-shadow: rgba(0, 0, 0, 0.20) 0px 1px 4px;
+   padding: 3px;
+}

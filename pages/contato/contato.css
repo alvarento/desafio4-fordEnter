@@ -1,0 +1,50 @@
+.main__content {
+   display: flex;
+   background-color: var(--white-color);
+   justify-content: space-evenly;
+   border-radius: 8px;
+   width: 800px;
+   flex-wrap: wrap;
+   max-width: 90%;
+}
+
+.main__content-form {
+   display: flex;
+   flex-grow: 1;
+   flex-direction: column;
+}
+
+.form-title {
+   text-align: left;
+   margin-left: 8px;
+   margin-bottom: 8px;
+   font-weight: 600;
+   font-size: 1.15rem;
+}
+
+.form {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+}
+
+.form-group {
+   margin-bottom: 15px;
+}
+
+.input__nome,
+.input__sobrenome,
+.input__cpf,
+.input__email,
+.input__fone,
+.input__select-contato {
+   width: calc(100% - 12px);
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+.button__form {
+   align-self: flex-end;
+   min-width: 40%;
+}
