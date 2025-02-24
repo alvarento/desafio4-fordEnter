@@ -3,6 +3,10 @@
    margin-top: 1.75rem;
 }
 
+.main__lancamento-page {
+   width: 100%;
+}
+
 .iframe {
    max-width: var(--max-width-iframe);
    max-height: calc(var(--max-width-iframe) * 0.5625);

@@ -13,7 +13,7 @@ body {
    font-family: "Poppins", serif;
    display: flex;
    flex-direction: column;
-   justify-content: space-between !important;
+   justify-content: space-between;
 }
 
 .container {
@@ -21,6 +21,7 @@ body {
    margin-right: auto;
    padding-right: 1.5rem;
    padding-left: 1.5rem;
+   max-width: 1600px;
 }
 
 .logo {
@@ -29,56 +30,13 @@ body {
    min-width: 80px;
 }
 
-@media (min-width: 1600px) {
-
-   .container {
-      max-width: 1600px;
-   }
-}
-
-@media (max-width: 767px) {
-
-   .container {
-      padding-left: 0.25rem;
-      padding-right: 0.25rem;
-   }
-
-   .header__content {
-      flex-direction: column;
-   }
-
-   .logo {
-      align-self: center;
-   }
-
-   .logo__image {
-      height: 100%;
-      width: 100%;
-   }
-
-   .navbar {
-      padding-top: 1.45rem;
-   }
-
-   .footer__content {
-      gap: 2rem;
-      justify-content: center !important;
-   }
-
-}
-
-.container__header {
-   width: 100%;
-   position: relative;
-   background-color: red;
-}
-
 .header {
    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-   position: sticky;
+   position: fixed;
    top: 0;
    width: 100%;
    padding: .85rem 0;
+   z-index: 1;
    background-color: var(--white-color);
 }
 
@@ -111,7 +69,13 @@ body {
 }
 
 .main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    text-align: center;
+   padding-top: 135px;
+   padding-bottom: 1.75rem;
+   flex-grow: 1;
 }
 
 .button {
@@ -136,7 +100,6 @@ body {
    background-color: var(--primary-color);
    color: var(--white-color);
    width: 100%;
-   margin-top: 1.75rem;
 }
 
 .footer__content {
@@ -144,7 +107,8 @@ body {
    justify-content: space-between;
    align-items: center;
    flex-wrap: wrap;
-   padding: 0.85rem;
+   padding-top: 0.85rem;
+   padding-bottom: 0.85rem;
 }
 
 .social-links {
@@ -162,4 +126,29 @@ body {
 .social-links__item:hover {
    transform: scale(1.10);
    border: .5px solid var(--white-color);
+}
+
+@media (max-width: 767px) {
+
+   .header__content {
+      flex-direction: column;
+   }
+
+   .logo {
+      align-self: center;
+   }
+
+   .logo__image {
+      height: 100%;
+      width: 100%;
+   }
+
+   .navbar {
+      padding-top: 1.45rem;
+   }
+
+   .footer__content {
+      gap: 2rem;
+      justify-content: center !important;
+   }
 }
