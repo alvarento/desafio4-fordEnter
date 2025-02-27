@@ -4,110 +4,122 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="shortcut icon" href="../../img/ford-96.png" type="image/x-icon">
-   <link rel="stylesheet" href="../../css/reset.css">
-   <link rel="stylesheet" href="../../css/global.css">
+   <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
    <link rel="stylesheet" href="./lancamento.css">
    <title>Lançamento</title>
 </head>
 
-<body>
+<body class="page">
+
    <header class="header">
       <div class="header__content container">
-         <a class="logo" href="../home/home.html"><img class="logo__image" src="../../img/logo-ford-256.png" alt="Logo Ford"></a>
-         <nav class="navbar">
-            <ul class="navbar__list">
-               <li class="navbar__item"><a href="../home/home.html">Home</a></li>
-               <li class="navbar__item"><a href="../lancamento/lancamento.html">Lançamento</a></li>
-               <li class="navbar__item"><a href="../contato/contato.html">Contato</a></li>
+         <a class="header__logo" href="/">
+            <img class="header__logo-image" src="/images/logo-ford-256.png" alt="Logo Ford">
+         </a>
+         <nav class="header__nav">
+            <ul class="header__nav-list">
+               <li class="header__nav-item">
+                  <a class="header__nav-link" href="/">Home</a>
+               </li>
+               <li class="header__nav-item">
+                  <a class="header__nav-link" href="/pages/lancamento/lancamento.html">Lançamento</a>
+               </li>
+               <li class="header__nav-item">
+                  <a class="header__nav-link" href="/pages/contato/contato.html">Contato</a>
+               </li>
             </ul>
          </nav>
       </div>
    </header>
+
    <main class="main">
-      <div class="main__content container main__lancamento-page">
-         <div class="video-area">
-            <iframe width="560" height="315" class="iframe"
+      <div class="main__content container">
+         <section class="video">
+            <iframe class="video__iframe" width="560" height="315"
                src="https://www.youtube.com/embed/vQsryuNmsL0?si=9cog8D7cF-_Afc-R" title="YouTube video player"
                frameborder="0"
                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             </iframe>
-         </div>
-         <div class="models-area">
-            <table class="models-area__table">
-               <tbody class="table__body">
-                  <tr>
-                     <td class="card-car">
-                        <div class="card-car__image">
-                           <img src="../../img/XL Cabine.jpg" alt="XL Cabine Simples 2.2 Diesel 4x4 C/P 2022"
+         </section>
+         <section class="models">
+            <table class="models__table">
+               <tbody class="models__list">
+                  <tr class="models__card-container">
+                     <td class="models__card">
+                        <div class="models__card-image">
+                           <img src="/images/ranger-xl-cabine-simples.jpg" alt="XL Cabine Simples 2.2 Diesel 4x4 C/P 2022"
                               width="320px">
                         </div>
-                        <div class="card-car__infos">
+                        <div class="models__card-infos">
                            <input type="checkbox" checked>
-                           <div class="car-description">
-                              <span class="car-description__model-name">XL Cabine Simples 2.2 Diesel 4x4 C/P 2022</span>
-                              <span>Preço Sob Consulta</span>
+                           <div class="models__description">
+                              <span class="models__name">XL Cabine Simples 2.2 Diesel 4x4 C/P 2022</span>
+                              <span class="models__price">Preço Sob Consulta</span>
                            </div>
-                           <img class="icon-infos" src="../../img/info.png" alt="Icone de Informações" title="Informações">
+                           <img class="icon-infos" src="/images/icon-info.png" alt="Icone de Informações" title="Informações">
                         </div>
                      </td>
                   </tr>
-                  <tr>
-                     <td class="card-car">
-                        <div class="card-card__image">
-                           <img src="../../img/xls 2.2 diesel.jpg" alt="XLS 2.2 Diesel 4x4 AT 2022">
+                  <tr class="models__card-container">
+                     <td class="models__card">
+                        <div class="models__card-image">
+                           <img src="/images/ranger-xls-2.2.jpg" alt="XLS 2.2 Diesel 4x4 AT 2022">
                         </div>
-                        <div class="card-car__infos">
+                        <div class="models__card-infos">
                            <input type="checkbox">
-                           <div class="car-description">
-                              <span class="car-description__model-name">XLS 2.2 Diesel 4x4 AT 2022</span>
-                              <span>Preço Sob Consulta</span>
+                           <div class="models__description">
+                              <span class="models__name">XLS 2.2 Diesel 4x4 AT 2022</span>
+                              <span class="models__price">Preço Sob Consulta</span>
                            </div>
-                           <img class="icon-infos" src="../../img/info.png" alt="Icone de Informações" title="Informações">
+                           <img class="icon-infos" src="/images/icon-info.png" alt="Icone de Informações" title="Informações">
                         </div>
                      </td>
                   </tr>
-                  <tr>
-                     <td>
-                        <div class="card-card__image">
-                           <img src="../../img/xls 2.2 diesel.jpg" alt="Storm 3.2 Diesel 4x4 AT 2022">
+                  <tr class="models__card-container">
+                     <td class="models__card">
+                        <div class="models__card-image">
+                           <img src="/images/ranger-storm.jpg" alt="Storm 3.2 Diesel 4x4 AT 2022">
                         </div>
-                        <div class="card-car__infos">
+                        <div class="models__card-infos">
                            <input type="checkbox">
-                           <div class="car-description">
-                              <span class="car-description__model-name">Storm 3.2 Diesel 4x4 AT 2022</span>
-                              <span>Preço Sob Consulta</span>
+                           <div class="models__description">
+                              <span class="models__name">Storm 3.2 Diesel 4x4 AT 2022</span>
+                              <span class="models__price">Preço Sob Consulta</span>
                            </div>
-                           <img class="icon-infos" src="../../img/info.png" alt="Icone de Informações" title="Informações">
+                           <img class="icon-infos" src="/images/icon-info.png" alt="Icone de Informações" title="Informações">
                         </div>
                      </td>
                   </tr>
                </tbody>
             </table>
             <button class="button">Compare Carros</button>
-         </div>
+         </section>
       </div>
    </main>
+
    <footer class="footer">
       <div class="footer__content container">
-         <div class="social-links">
-            <span class="social-links__title">Redes Sociais</span>
-            <a class="social-links__item" href="https://www.facebook.com/FordBrasil" target="_blank">
-               <img src="../../img/facebook-50.png" alt="Icone do Facebook">
-            </a>
-            <a class="social-links__item" href="https://www.youtube.com/fordbrasil" target="_blank">
-               <img src="../../img/youtube-squared-50.png" alt="Icone do YouTube">
-            </a>
-            <a class="social-links__item" href="https://www.instagram.com/fordbrasil" target="_blank">
-               <img src="../../img/instagram-logo-50.png" alt="Icone do Instagram">
-            </a>
+         <div class="footer__social-links">
+            <span class="footer_social-links-legend">Redes Sociais</span>
+            <div class="footer__social-links-list">
+               <a class="footer__social-link-item" href="https://www.facebook.com/FordBrasil" target="_blank">
+                  <img class="footer__social-icon" src="/images/icon-facebook.png" alt="Icone do Facebook">
+               </a>
+               <a class="footer__social-link-item" href="https://www.youtube.com/fordbrasil" target="_blank">
+                  <img class="footer__social-icon" src="/images/icon-youtube.png" alt="Icone do YouTube">
+               </a>
+               <a class="footer__social-link-item" href="https://www.instagram.com/fordbrasil" target="_blank">
+                  <img class="footer__social-icon" src="/images/icon-instagram.png" alt="Icone do Instagram">
+               </a>
+            </div>
          </div>
-         <a class="footer-logo" href="https://www.ford.com.br/" target="_blank" title="Ver Ford Brasil">
-            <img class="footer-logo__image" src="../../img/ford-96.png" alt="Icone de Logo Ford">
+         <a class="footer__logo" href="https://www.ford.com.br/" target="_blank" title="Ver Ford Brasil">
+            <img class="footer__logo-image" src="/images/logo-ford-96.png" alt="Icone de Logo Ford">
          </a>
       </div>
    </footer>
+
 </body>
 
 </html>

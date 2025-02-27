@@ -1,3 +1,5 @@
+@import './css/global/global.css';
+
 .main__legend {
    margin-top: .75rem;
 }
@@ -13,8 +15,8 @@
 }
 
 .main__image {
-   width: 90vw;
+   width: 100%;
    max-width: 1440px;
    box-shadow: rgba(0, 0, 0, 0.20) 0px 1px 4px;
-   padding: 3px;
+   padding: 1.5px;
 }

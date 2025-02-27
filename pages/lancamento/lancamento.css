@@ -1,37 +1,68 @@
-.video-area {
+@import '/css/global/global.css';
+
+.video {
    background-color: #000;
    margin-top: 1.75rem;
 }
 
-.main__lancamento-page {
-   width: 100%;
-}
-
-.iframe {
+.video__iframe {
    max-width: var(--max-width-iframe);
    max-height: calc(var(--max-width-iframe) * 0.5625);
    width: 95%;
    height: calc(90vw * 0.5625);
 }
 
-.models-area {
-   align-items: center;
-   height: 100%;
-}
-
-.models-area thead tr {
-   display: flex;
-}
-
-.models-area__table {
+.models__table {
    width: 100%;
 }
 
-.table__body {
+.models__list {
    display: flex;
    justify-content: center;
+   align-items: center;
    flex-wrap: wrap;
    gap: 5rem;
+}
+
+.models__card-container {
+   display: flex;
+   min-width: 300px;
+   max-width: 330px;
+   padding: 5px;
+   border-radius: 5px;
+}
+
+
+.models__card {
+   width: 100%;
+}
+
+.models__card-infos {
+   display: flex;
+   gap: .45rem;
+}
+
+.models__description {
+   margin-right: 2.5rem;
+   text-align: left;
+   flex: 1;
+}
+
+.models__card-infos input {
+   width: 28px;
+   height: 28px;
+   cursor: pointer;
+}
+
+.models__name {
+   color: var(--second-color);
+   margin-bottom: .45rem;
+}
+
+.models__name,
+.models__price {
+   display: block;
+   font-size: .85rem;
 }
 
 .icon-infos {
@@ -40,25 +71,8 @@
    cursor: pointer;
 }
 
-.table__body tr {
-   display: flex;
-   flex-direction: column;
-   gap: 5rem;
-}
-
-.card-car__infos {
-   display: flex;
-   gap: .75rem;
-   justify-content: space-evenly;
-}
-
-.car-description span {
-   display: block;
-   font-size: .75rem;
-}
-
-.car-description__model-name {
-   color: var(--second-color);
-   max-width: 170px;
-   margin-bottom: .45rem;
+@media (max-width: 480px) {
+   .models__card-image img {
+      width: 240px;
+   }
 }

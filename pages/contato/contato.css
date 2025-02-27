@@ -1,11 +1,18 @@
+@import '/css/global/global.css';
+
 .main__content {
    display: flex;
    background-color: var(--white-color);
    justify-content: space-evenly;
+   align-items: center;
    border-radius: 8px;
    width: 800px;
    flex-wrap: wrap;
    max-width: 90%;
+}
+
+.main__content-image img {
+   width: 100%;
 }
 
 .main__content-form {
@@ -28,23 +35,19 @@
    flex-direction: column;
 }
 
-.form-group {
+.form__form-group {
    margin-bottom: 15px;
 }
 
-.input__nome,
-.input__sobrenome,
-.input__cpf,
-.input__email,
-.input__fone,
-.input__select-contato {
+.form__input,
+.form__select-contato {
    width: calc(100% - 12px);
    padding: 8px;
    border: 1px solid #ccc;
    border-radius: 4px;
 }
 
-.button__form {
+.form__button {
    align-self: flex-end;
    min-width: 40%;
 }
